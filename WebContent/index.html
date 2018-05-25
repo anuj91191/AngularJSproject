@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+<title>Finance Meter</title>
+</head>
+<body ng-controller="finCtrl">
+Your Salary?
+<input type="text" ng-model="salary">
+<br/>How much should you invest in shopping?
+<input type="text" ng-model="percentage">%
+<br/>The amount to be spent on gadgets will be:<span>{{result()}}
+{{name}})</span>
+
+<br/>
+<div ng-controller="greetCtrl">
+{{greeting}} User! The current date/time is anuj <span>{{now | date:'medium'}}</span>.
+<br/>
+<button ng-click="randomGreeting()">Random Hello Message</button>
+
+</div>
+<br>
+<br>
+<div ng-controller="imagegotCtrl">
+
+
+<br>
+<br>
+<button ng-click="randomImage()">image</button>
+
+<img  ng-src="https://www.w3schools.com/jsref/{{imageURLS}}"/>
+<br>
+</div>
+
+<br>
+<a href="FBscrapper.html">FB</a>
+<script src="angular.js"></script>
+<script src="apps.js"></script>
+<script src="controllers.js"></script>
+</body>
+</html>

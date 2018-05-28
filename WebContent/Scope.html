@@ -4,7 +4,8 @@
 <meta charset="utf-8" />
 <title ng-bind="title"></title>
 </head>
-<body ng-controller="SiteController">
+<body>
+<div ng-controller="SiteController">
 <span>{{publisher}} excels in {{type}} books</span>
 <div ng-controller="BookController">
 <h3>Some of the popular books from {{publisher}}</h3>
@@ -14,6 +15,13 @@
 		{{book}}.<a href="#" ng-click="addToWishList(book)">Add to wish LisT</a>
 		</li>
 	</ul>
+</div>
+
+</div>
+<div ng-controller="TimeOutController">
+	<button ng-click="scheduleTask()">Get Message after 3 seconds 
+	</button>
+	<br/>Message fetched: {{message}}
 </div>
 </body>
 <script src="angular.js"></script>
